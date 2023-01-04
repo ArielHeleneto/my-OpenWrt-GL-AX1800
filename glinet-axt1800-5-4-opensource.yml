@@ -1,0 +1,47 @@
+---
+profile: glinet_axt1800
+target: ipq807x
+subtarget: ipq60xx
+description: Build image for the GL.iNET AXT1800
+image: bin/targets/ipq807x/ipq60xx/openwrt-ipq807x-glinet_axt1800-squashfs-sysupgrade.tar
+feeds:
+  - name: ipq807x
+    path: ../../feeds/ipq807x
+  - name: gl_feeds_common
+    uri: https://github.com/gl-inet/gl-feeds.git
+    branch: common
+  - name: luci
+    uri: https://github.com/openwrt/luci.git
+    revision: 1c3b32dc1bec15e3076a447762b1c4f94eb75fb7
+  - name: kenzok8_packages
+    uri: https://github.com/kenzok8/openwrt-packages.git
+    branch: master
+    revision: 46d38af8a76c703126f24f97af3c0f2332e87edc
+  - name: immortalwrt_luci
+    uri: https://github.com/immortalwrt/luci.git
+    branch: openwrt-21.02
+    revision: ea95ddd386f294ba89c93c7a4fe8ce0da780a87e
+  - name: small_package
+    uri: https://github.com/kenzok8/small-package.git
+    branch: main
+    revision: a1bf46d9a371b5c9cb1a0aa6f42ca567619946dc
+include:
+  - wifi-ax
+packages:
+  - kmod-hwmon-pwmfan
+  - wget-ssl
+  - luci-theme-argon
+  - luci-app-argon-config
+  - luci-app-ramfree
+  - luci-app-wol
+  - luci-app-diskman
+  - luci-app-smartdns
+  - luci-app-openclash
+  - luci-app-aria2
+  - luci-app-zerotier
+  - luci-app-turboacc
+  - luci-app-xlnetacc
+  - luci-app-cpufreq
+  - luci-app-ttyd
+  - luci-app-serverchan
+  - luci-app-transmission
