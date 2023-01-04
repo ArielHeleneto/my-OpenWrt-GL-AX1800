@@ -7,25 +7,50 @@
  * @build 生成自定义的编译文件 可留空（留空自动生成为 glnet-型号）
  * @official 是否官方编译界面
  */
- module.exports = [
+module.exports = [
   {
-    model: 'ax1800',
-    config: 'config-wlan-ap',
-    target: 'target_wlan_ap-gl-ax1800',
-    official: true,
-  },
-  {
+    name: 'build-glnet-axt1800-official',
     model: 'axt1800',
     config: 'config-wlan-ap',
     target: 'target_wlan_ap-gl-axt1800',
     official: true,
   },
   {
-    model: 'mt2500',
-    config: 'config-mt798x-7.6.6.1',
-    target: 'target_mt7981_gl-mt2500',
+    name: 'build-glnet-axt1800-opensource',
+    model: 'axt1800',
+    config: 'config-wlan-ap',
+    target: 'target_wlan_ap-gl-axt1800',
+    official: false,
+  },
+  {
+    name: 'build-glinet-axt1800-5.4-official',
+    model: 'axt1800',
+    config: 'config-wlan-ap-5.4',
+    target: 'target_wlan_ap-gl-axt1800-5-4',
+    build: 'glinet-axt1800-5-4',
     official: true,
   },
+  {
+    name: 'build-glinet-axt1800-5.4-opensource',
+    model: 'axt1800',
+    config: 'config-wlan-ap-5.4',
+    target: 'target_wlan_ap-gl-axt1800-5-4',
+    build: 'glinet-axt1800-5-4',
+    official: false,
+  },
+  // {
+  //   model: 'ax1800',
+  //   config: 'config-wlan-ap',
+  //   target: 'target_wlan_ap-gl-ax1800',
+  //   official: true,
+  // },
+
+  // {
+  //   model: 'mt2500',
+  //   config: 'config-mt798x-7.6.6.1',
+  //   target: 'target_mt7981_gl-mt2500',
+  //   official: true,
+  // },
   // {
   //   model: 'mt1300',
   //   config: 'config-22.03.0',
