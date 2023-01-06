@@ -41,14 +41,14 @@ module.exports = [
     name: 'luci-app-aria2',
     desc: 'aria2下载工具',
   },
-  // {
-  //   name: 'luci-app-zerotier',
-  //   desc: 'ZeroTier内网穿透',
-  // },
-  // {
-  //   name: 'luci-app-turboacc',
-  //   desc: 'Turbo ACC 网络加速(支持 Fast Path 或者 硬件 NAT)',
-  // },
+  {
+    name: 'luci-app-zerotier',
+    desc: 'ZeroTier内网穿透',
+  },
+  {
+    name: 'luci-app-turboacc',
+    desc: 'Turbo ACC 网络加速(支持 Fast Path 或者 硬件 NAT)',
+  },
   // {
   //   name: 'luci-app-xlnetacc',
   //   desc: '迅雷快鸟',
@@ -121,10 +121,10 @@ module.exports = [
   //   name: 'luci-app-mwan3helper',
   //   desc: 'MWAN3分流助手',
   // },
-  // {
-  //   name: 'luci-app-wrtbwmon',
-  //   desc: '实时流量监测',
-  // },
+  {
+    name: 'luci-app-wrtbwmon',
+    desc: '实时流量监测',
+  },
   // {
   //   name: 'luci-app-serverchan',
   //   desc: '微信/Telegram推送',
