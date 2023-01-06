@@ -37,8 +37,11 @@ packages:
   - luci-app-wol
   - luci-app-openclash
   - luci-app-aria2
+  - luci-app-zerotier
+  - luci-app-turboacc
   - luci-app-cpufreq
   - luci-app-samba4
   - luci-app-advancedsetting
   - luci-app-ttyd
   - luci-app-syncdial
+  - luci-app-wrtbwmon

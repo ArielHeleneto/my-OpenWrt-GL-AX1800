@@ -175,7 +175,7 @@ jobs:
         touch release.txt
         echo "## 📦‍ 固件下载 | GLINET AXT1800 5.4 OPENSOURCE" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "- 🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
-        echo -e "## ✨ 主要功能\n1. argon主题\n2. argon主题设置\n3. 应用商店\n4. 释放内存\n5. wol 网络唤醒\n6. clash的图形代理软件\n7. aria2下载工具\n8. CPU 性能优化调节\n9. samba4文件共享\n10. 系统高级设置\n11. ttyd 终端\n12. 多拨虚拟网卡（需要光猫支持多拨）" >> release.txt
+        echo -e "## ✨ 主要功能\n1. argon主题\n2. argon主题设置\n3. 应用商店\n4. 释放内存\n5. wol 网络唤醒\n6. clash的图形代理软件\n7. aria2下载工具\n8. ZeroTier内网穿透\n9. Turbo ACC 网络加速(支持 Fast Path 或者 硬件 NAT)\n10. CPU 性能优化调节\n11. samba4文件共享\n12. 系统高级设置\n13. ttyd 终端\n14. 多拨虚拟网卡（需要光猫支持多拨）\n15. 实时流量监测" >> release.txt
         echo "::set-output name=status::success"
 
     - name: Upload firmware to release
